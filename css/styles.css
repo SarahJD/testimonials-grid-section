@@ -1,0 +1,162 @@
+/* Colors discussed
+
+Primary Colors
+Moderate violet: #7541c8 rgba(117, 65, 200, 1)
+Very dark grayish blue: #48556a
+Very dark blackish blue: #19212e rgba(25, 33, 46, 1)
+White: #ffffff rgba(255, 255, 255, 1)
+
+Neutral Colors
+Light gray: #cfcfcf
+Light grayish blue: #ecf2f8
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+	line-height: 1.5;
+	margin: 2rem 1rem;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.testimonial-box {
+  border-radius: 8px;
+  padding: 2.5em;
+	margin-bottom: 2rem;
+}
+
+.testimonial-box__header {
+  display: flex;
+  align-items: center;
+	gap: 1rem;
+	padding-bottom: 1rem;
+}
+
+img {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.border {
+  border: solid 0.2em rgba(117, 65, 200, 0.5);
+}
+
+.subheading-type-1 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.subheading-type-2 {
+  color: rgba(25, 33, 46, 0.5);
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+	font-weight: 600;
+	margin-bottom: 0.7em;
+}
+
+p {
+  line-height: 1.4em;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.box-p-type-1 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.box-p-type-2 {
+  color: rgba(25, 33, 46, 0.7);
+}
+
+.box-1 {
+  background-color: #7541c8;
+  color: #fff;
+	background-image: url(../img/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: right 10% top 0;
+	background-size: 8rem;
+	grid-area: t1;
+}
+
+.box-2 {
+  background-color: #48556a;
+  color: #fff;
+	grid-area: t2;
+}
+
+.box-3 {
+  background-color: #fff;
+  color: rgba(25, 33, 46, 0.8);
+	grid-area: t3;
+}
+
+.box-4 {
+  background-color: #19212e;
+  color: #fff;
+	grid-area: t4;
+}
+
+.box-5 {
+  background-color: #fff;
+  color: rgba(25, 33, 46, 0.8);
+	grid-area: t5;
+}
+
+footer {
+  display: block;
+  margin: 2em 1rem;
+}
+
+@media all and (min-width: 40em) {
+	body {
+	  margin: 8em;
+	}
+
+	.grid {
+	  display: grid;
+		grid-template-rows: repeat(auto, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "t1 t1 t2" "t3 t4 t4" "t5 t5 t5";
+	  grid-gap: 2em;
+	}
+}
+
+@media all and (min-width: 70em) {
+	body {
+	  margin: 12.5em;
+	}
+
+	.grid {
+	  display: grid;
+		grid-template-rows: repeat(auto, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "t1 t1 t2 t5" "t3 t4 t4 t5";
+	  grid-gap: 2em;
+	}
+}
