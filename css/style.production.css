@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /* Colors discussed
@@ -146,10 +146,6 @@ footer {
 }
 
 @media all and (min-width: 40em) {
-	body {
-	  margin: 8em;
-	}
-
 	.grid {
 	  display: -ms-grid;
 	  display: grid;
@@ -159,30 +155,26 @@ footer {
     grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "t1 t1 t2" "t3 t4 t4" "t5 t5 t5";
 	  grid-gap: 2em;
+		margin: 2em;
 	}
-
 	.box-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
 	}
-
 	.box-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
 	}
-
 	.box-3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
 	}
-
 	.box-4 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
 	}
-
 	.box-5 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
@@ -191,10 +183,6 @@ footer {
 }
 
 @media all and (min-width: 70em) {
-	body {
-	  margin: 12.5em;
-	}
-
 	.grid {
 	  display: -ms-grid;
 	  display: grid;
@@ -205,29 +193,24 @@ footer {
         grid-template-areas: "t1 t1 t2 t5" "t3 t4 t4 t5";
 	  grid-gap: 2em;
 	}
-
 	.box-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
 	}
-
 	.box-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
 	}
-
 	.box-3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
 	}
-
 	.box-4 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
 	}
-
 	.box-5 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
