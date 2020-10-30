@@ -183,6 +183,12 @@ footer {
 }
 
 @media all and (min-width: 70em) {
+ body {
+	 max-width: 80rem;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+
 	.grid {
 	  display: -ms-grid;
 	  display: grid;
@@ -191,26 +197,30 @@ footer {
     -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr;
     grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "t1 t1 t2 t5" "t3 t4 t4 t5";
-	  grid-gap: 2em;
 	}
+
 	.box-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
 	}
+
 	.box-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
 	}
+
 	.box-3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
 	}
+
 	.box-4 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
 	}
+
 	.box-5 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
